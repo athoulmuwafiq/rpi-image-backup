@@ -46,7 +46,7 @@ The script runs on a linux distribution of your choice. You must have the follow
 The backup process creates a directory structure based on the name of the raspberry pi and the current date in the format YYYY-MM-DD. The directory structure is created beneath the base directory: 
 
 ```
-# rpi-image-backup --backup -d /dev/sdi -n mypi -o /backup
+# rpi-image-backup --backup -d /dev/sdi -n mypi -b /backup
 ```
 This creates a directory /backup/mypi/YYYY-MM-DD
 
@@ -62,7 +62,7 @@ Depending on your used OS and/or if you used N00bs to install your Raspi the num
 Restoring wipes the destiniation device completly - so BE CAREFUL and check twice which device you will using to restore the backup.
 
 ```
-# rpi-image-backup --restore -d /dev/sdi -n mypu -o /backup/mypi/YYYY-MM-DD
+# rpi-image-backup --restore -d /dev/sdi -n mypu -b /backup/mypi/YYYY-MM-DD
 ```
 
 Restores the MBR, partition information and all partitions to the given device. 
