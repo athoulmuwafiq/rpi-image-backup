@@ -78,4 +78,7 @@ This is useful when you want to access the filesystem in the image file:
 ```
 
 
+./rpi-image-backup --backup -d /dev/sdb -n scnshift -b ./backup
+./rpi-image-backup --restore -d /dev/sdb -n scnshift -b /backup/scnshift/YYYY-MM-DD
+
 
