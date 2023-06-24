@@ -18,6 +18,6 @@ The script runs on a linux distribution of your choice. You must have the follow
 ./rpi-image-backup --backup -d /dev/sdb -n scnshift -b ./backup
 ```
 ```
-./rpi-image-backup --restore -d /dev/sdb -n scnshift -b /backup/scnshift/YYYY-MM-DD
+./rpi-image-backup --restore -d /dev/sdb -n scnshift -b ./backup/scnshift/YYYY-MM-DD
 ```
 
